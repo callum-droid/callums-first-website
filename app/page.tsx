@@ -246,7 +246,7 @@ function Hero() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
               Your Smile,{" "}
               <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-                Perfected!
+                Perfect
               </span>
             </h1>
           </FadeIn>
