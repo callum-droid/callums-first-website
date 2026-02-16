@@ -87,7 +87,7 @@ function IconChevronRight() {
 
 function IconCheck() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-brand-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
     </svg>
   );
@@ -161,18 +161,18 @@ function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <div className="w-9 h-9 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-xl flex items-center justify-center">
+          <div className="w-9 h-9 bg-brand-dark rounded-xl flex items-center justify-center">
             <span className="text-white font-bold text-sm">J</span>
           </div>
-          <span className="text-xl font-bold text-slate-900 tracking-tight">
-            JXB Orthodontics<span className="text-violet-600">.</span>
+          <span className="text-xl font-bold text-neutral-text tracking-tight">
+            JXB Orthodontics<span className="text-brand-dark">.</span>
           </span>
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-muted">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-violet-600 transition-colors">
+            <a key={l.href} href={l.href} className="hover:text-brand-dark transition-colors">
               {l.label}
             </a>
           ))}
@@ -180,7 +180,7 @@ function Navbar() {
 
         <a
           href="#contact"
-          className="hidden md:inline-flex bg-violet-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-violet-700 transition-colors shadow-lg shadow-violet-200"
+          className="hidden md:inline-flex bg-brand-dark text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#164568] transition-all duration-300 hover:scale-105 shadow-lg focus:ring-4 focus:ring-brand focus:outline-none"
         >
           Book Free Consultation
         </a>
@@ -191,9 +191,9 @@ function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <span className={`w-6 h-0.5 bg-slate-700 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`w-6 h-0.5 bg-slate-700 transition-opacity ${open ? "opacity-0" : ""}`} />
-          <span className={`w-6 h-0.5 bg-slate-700 transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`w-6 h-0.5 bg-neutral-text transition-transform ${open ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`w-6 h-0.5 bg-neutral-text transition-opacity ${open ? "opacity-0" : ""}`} />
+          <span className={`w-6 h-0.5 bg-neutral-text transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
@@ -204,7 +204,7 @@ function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-slate-700 font-medium hover:text-violet-600"
+              className="text-neutral-text font-medium hover:text-brand-dark"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -212,7 +212,7 @@ function Navbar() {
           ))}
           <a
             href="#contact"
-            className="mt-2 bg-violet-600 text-white text-center px-5 py-3 rounded-full font-semibold"
+            className="mt-2 bg-brand-dark text-white text-center px-5 py-3 rounded-xl font-semibold hover:bg-[#164568] transition-all duration-300"
             onClick={() => setOpen(false)}
           >
             Book Free Consultation
@@ -227,32 +227,32 @@ function Navbar() {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-violet-50/40 to-indigo-50/30">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-brand-light to-white">
       {/* Decorative blobs */}
-      <div className="absolute top-20 -left-32 w-96 h-96 bg-violet-200/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-0 w-80 h-80 bg-indigo-200/30 rounded-full blur-3xl" />
+      <div className="absolute top-20 -left-32 w-96 h-96 bg-brand/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-0 w-80 h-80 bg-brand/15 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-20 grid lg:grid-cols-2 gap-12 items-center">
         {/* Copy */}
         <div>
           <FadeIn>
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur rounded-full px-4 py-1.5 text-sm font-medium text-violet-700 border border-violet-100 mb-6 shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur rounded-full px-4 py-1.5 text-sm font-medium text-brand-dark border border-brand/30 mb-6 shadow-sm">
               <span className="flex gap-0.5">{[...Array(5)].map((_, i) => <IconStar key={i} />)}</span>
               <span>Rated 4.9/5 by 1,200+ patients</span>
             </div>
           </FadeIn>
 
           <FadeIn delay={100}>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark leading-tight tracking-tight">
               Your Smile,{" "}
-              <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-dark to-brand bg-clip-text text-transparent">
                 Perfect
               </span>
             </h1>
           </FadeIn>
 
           <FadeIn delay={200}>
-            <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
+            <p className="mt-6 text-lg text-neutral-muted leading-relaxed max-w-lg">
               Specialist orthodontists creating bespoke treatment plans for children, teens, and adults.
               No waiting lists. Flexible finance from £49/month. Real-time progress with Dental Monitoring.
             </p>
@@ -262,13 +262,13 @@ function Hero() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#contact"
-                className="bg-violet-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-violet-700 transition-all shadow-xl shadow-violet-200 hover:shadow-violet-300 hover:-translate-y-0.5"
+                className="bg-brand-dark text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#164568] transition-all duration-300 shadow-lg hover:scale-105 hover:-translate-y-0.5 focus:ring-4 focus:ring-brand focus:outline-none"
               >
                 Book Your Free Consultation
               </a>
               <a
                 href="#treatments"
-                className="flex items-center gap-2 px-6 py-4 rounded-full font-semibold text-slate-700 hover:text-violet-600 transition-colors"
+                className="flex items-center gap-2 px-6 py-4 rounded-xl font-semibold text-neutral-text hover:text-brand-dark transition-colors"
               >
                 View Treatments →
               </a>
@@ -276,7 +276,7 @@ function Hero() {
           </FadeIn>
 
           <FadeIn delay={400}>
-            <div className="mt-10 flex items-center gap-6 text-sm text-slate-500">
+            <div className="mt-10 flex items-center gap-6 text-sm text-neutral-muted">
               <span className="flex items-center gap-1.5">
                 <IconShield />
                 GDC Registered
@@ -295,25 +295,25 @@ function Hero() {
 
         {/* Hero visual placeholder */}
         <FadeIn delay={200} className="relative hidden lg:block">
-          <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-violet-100 to-indigo-100 shadow-2xl">
+          <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-brand-light to-brand/30 shadow-2xl">
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-              <div className="w-32 h-32 bg-violet-200 rounded-full mb-6 flex items-center justify-center">
+              <div className="w-32 h-32 bg-brand/30 rounded-full mb-6 flex items-center justify-center">
                 <span className="text-5xl">😊</span>
               </div>
-              <p className="text-slate-500 text-sm font-medium">
+              <p className="text-neutral-muted text-sm font-medium">
                 Replace with hero image of smiling patients
               </p>
-              <p className="text-slate-400 text-xs mt-1">Recommended: 800×1000px</p>
+              <p className="text-neutral-muted/60 text-xs mt-1">Recommended: 800×1000px</p>
             </div>
           </div>
           {/* Floating card */}
-          <div className="absolute -left-6 bottom-12 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-slate-100">
-            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-sm">
+          <div className="absolute -left-6 bottom-12 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-brand/20">
+            <div className="w-10 h-10 bg-accent-mint rounded-full flex items-center justify-center text-brand-dark font-bold text-sm">
               ✓
             </div>
             <div>
-              <p className="text-sm font-semibold text-slate-900">2,500+ Smiles Created</p>
-              <p className="text-xs text-slate-500">Across all age groups</p>
+              <p className="text-sm font-semibold text-neutral-text">2,500+ Smiles Created</p>
+              <p className="text-xs text-neutral-muted">Across all age groups</p>
             </div>
           </div>
         </FadeIn>
@@ -353,8 +353,8 @@ function WhyUs() {
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Why Choose JXB Orthodontics</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+            <p className="text-brand-dark font-semibold text-sm uppercase tracking-wider mb-3">Why Choose JXB Orthodontics</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-dark">
               Orthodontic Care Built Around You
             </h2>
           </div>
@@ -363,12 +363,12 @@ function WhyUs() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {usps.map((item, i) => (
             <FadeIn key={i} delay={i * 100}>
-              <div className="group bg-slate-50 hover:bg-violet-50 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-violet-100">
-                <div className="w-14 h-14 bg-violet-100 group-hover:bg-violet-200 rounded-xl flex items-center justify-center text-violet-600 transition-colors mb-5">
+              <div className="group bg-neutral-bg hover:bg-brand-light rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-brand/30">
+                <div className="w-14 h-14 bg-brand-light group-hover:bg-brand/30 rounded-xl flex items-center justify-center text-brand-dark transition-colors mb-5">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-lg font-bold text-neutral-text mb-2">{item.title}</h3>
+                <p className="text-neutral-muted text-sm leading-relaxed">{item.desc}</p>
               </div>
             </FadeIn>
           ))}
@@ -384,7 +384,7 @@ const treatments = [
   {
     name: "Invisalign",
     tagline: "Nearly Invisible Aligners",
-    colour: "from-violet-500 to-indigo-500",
+    colour: "from-brand-dark to-brand",
     benefits: [
       "Virtually invisible — most people won't notice",
       "Removable for eating, brushing, and flossing",
@@ -404,7 +404,7 @@ const treatments = [
   {
     name: "Clear Ceramic Braces",
     tagline: "Discreet & Effective",
-    colour: "from-amber-400 to-orange-500",
+    colour: "from-brand to-accent-mint",
     benefits: [
       "Tooth-coloured brackets blend with your smile",
       "Ideal for patients wanting a subtle look",
@@ -415,15 +415,15 @@ const treatments = [
 
 function Treatments() {
   return (
-    <section id="treatments" className="py-24 bg-gradient-to-b from-slate-50 to-white">
+    <section id="treatments" className="py-24 bg-gradient-to-b from-brand-light to-white">
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Our Treatments</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+            <p className="text-brand-dark font-semibold text-sm uppercase tracking-wider mb-3">Our Treatments</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-dark">
               A Treatment to Suit Every Smile
             </h2>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-4 text-neutral-muted">
               Whether you prefer clear aligners or fixed braces, we'll recommend the best option for your lifestyle and goals.
             </p>
           </div>
@@ -432,7 +432,7 @@ function Treatments() {
         <div className="grid md:grid-cols-3 gap-8">
           {treatments.map((t, i) => (
             <FadeIn key={i} delay={i * 120}>
-              <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
+              <div className="bg-white rounded-2xl border border-brand/20 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
                 {/* Colour bar header */}
                 <div className={`h-44 bg-gradient-to-br ${t.colour} flex flex-col items-center justify-center text-white p-6`}>
                   <h3 className="text-2xl font-bold">{t.name}</h3>
@@ -441,7 +441,7 @@ function Treatments() {
                 <div className="p-6 flex-1 flex flex-col">
                   <ul className="space-y-3 flex-1">
                     {t.benefits.map((b, j) => (
-                      <li key={j} className="flex items-start gap-2 text-sm text-slate-600">
+                      <li key={j} className="flex items-start gap-2 text-sm text-neutral-muted">
                         <span className="mt-0.5"><IconCheck /></span>
                         {b}
                       </li>
@@ -449,7 +449,7 @@ function Treatments() {
                   </ul>
                   <a
                     href="#contact"
-                    className="mt-6 block text-center bg-violet-50 text-violet-700 font-semibold py-3 rounded-xl hover:bg-violet-100 transition-colors text-sm"
+                    className="mt-6 block text-center bg-brand-dark text-white font-semibold py-3 rounded-xl hover:bg-[#164568] transition-all duration-300 hover:scale-105 text-sm shadow-lg focus:ring-4 focus:ring-brand focus:outline-none"
                   >
                     Book a Consultation
                   </a>
@@ -472,7 +472,7 @@ const testimonials = [
     quote: "I was so nervous about getting braces as an adult, but the team at JXB made me feel completely at ease. My Invisalign journey was seamless and the results are incredible!",
     rating: 5,
     initials: "S",
-    colour: "bg-pink-100 text-pink-600",
+    colour: "bg-brand-light text-brand-dark",
   },
   {
     name: "James",
@@ -480,7 +480,7 @@ const testimonials = [
     quote: "The staff are really friendly and my appointments always run on time. My teeth look amazing now — I actually enjoy smiling for photos!",
     rating: 5,
     initials: "J",
-    colour: "bg-blue-100 text-blue-600",
+    colour: "bg-accent-mint text-brand-dark",
   },
   {
     name: "Priya",
@@ -488,7 +488,7 @@ const testimonials = [
     quote: "Dental Monitoring meant I only needed to visit every 10–12 weeks. Perfect for my busy schedule. The finance plan made it affordable too. Couldn't recommend JXB more highly.",
     rating: 5,
     initials: "P",
-    colour: "bg-amber-100 text-amber-600",
+    colour: "bg-brand/30 text-brand-dark",
   },
 ];
 
@@ -498,12 +498,12 @@ function Testimonials() {
   const next = () => setIdx((i) => (i === testimonials.length - 1 ? 0 : i + 1));
 
   return (
-    <section id="reviews" className="py-24 bg-white">
+    <section id="reviews" className="py-24 bg-neutral-bg">
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Patient Reviews</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+            <p className="text-brand-dark font-semibold text-sm uppercase tracking-wider mb-3">Patient Reviews</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-dark">
               Real Patients, Real Smiles
             </h2>
           </div>
@@ -511,7 +511,7 @@ function Testimonials() {
 
         <FadeIn delay={150}>
           <div className="relative max-w-3xl mx-auto">
-            <div className="bg-slate-50 rounded-3xl p-8 sm:p-12 text-center border border-slate-100">
+            <div className="bg-white rounded-3xl p-8 sm:p-12 text-center border border-brand/20 shadow-md">
               <div className={`w-16 h-16 rounded-full ${testimonials[idx].colour} flex items-center justify-center text-2xl font-bold mx-auto mb-6`}>
                 {testimonials[idx].initials}
               </div>
@@ -520,10 +520,10 @@ function Testimonials() {
                   <IconStar key={i} />
                 ))}
               </div>
-              <blockquote className="text-lg sm:text-xl text-slate-700 leading-relaxed italic">
+              <blockquote className="text-lg sm:text-xl text-neutral-text leading-relaxed italic">
                 &ldquo;{testimonials[idx].quote}&rdquo;
               </blockquote>
-              <p className="mt-6 font-semibold text-slate-900">
+              <p className="mt-6 font-semibold text-neutral-text">
                 {testimonials[idx].name}, {testimonials[idx].age}
               </p>
             </div>
@@ -532,7 +532,7 @@ function Testimonials() {
             <div className="flex justify-center gap-3 mt-8">
               <button
                 onClick={prev}
-                className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:bg-violet-50 hover:border-violet-200 transition-colors"
+                className="w-10 h-10 rounded-full bg-white border border-brand/30 flex items-center justify-center hover:bg-brand-light hover:border-brand transition-colors"
                 aria-label="Previous review"
               >
                 <IconChevronLeft />
@@ -541,13 +541,13 @@ function Testimonials() {
                 <button
                   key={i}
                   onClick={() => setIdx(i)}
-                  className={`w-3 h-3 rounded-full transition-colors ${i === idx ? "bg-violet-600" : "bg-slate-300"}`}
+                  className={`w-3 h-3 rounded-full transition-colors ${i === idx ? "bg-brand-dark" : "bg-brand/40"}`}
                   aria-label={`Go to review ${i + 1}`}
                 />
               ))}
               <button
                 onClick={next}
-                className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:bg-violet-50 hover:border-violet-200 transition-colors"
+                className="w-10 h-10 rounded-full bg-white border border-brand/30 flex items-center justify-center hover:bg-brand-light hover:border-brand transition-colors"
                 aria-label="Next review"
               >
                 <IconChevronRight />
@@ -571,23 +571,23 @@ const techFeatures = [
 
 function Technology() {
   return (
-    <section id="technology" className="py-24 bg-gradient-to-b from-slate-900 to-slate-800 text-white">
+    <section id="technology" className="py-24 bg-brand-dark text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <FadeIn>
             <div>
-              <p className="text-violet-400 font-semibold text-sm uppercase tracking-wider mb-3">Advanced Technology</p>
+              <p className="text-brand font-semibold text-sm uppercase tracking-wider mb-3">Advanced Technology</p>
               <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
                 Dental Monitoring:{" "}
-                <span className="text-violet-400">Your Orthodontist in Your Pocket</span>
+                <span className="text-brand">Your Orthodontist in Your Pocket</span>
               </h2>
-              <p className="mt-6 text-slate-300 leading-relaxed">
+              <p className="mt-6 text-brand-light/80 leading-relaxed">
                 We use Dental Monitoring — a cutting-edge app that lets you scan your teeth at home using your smartphone.
                 Your specialist reviews your progress remotely, meaning fewer trips to the practice and faster results.
               </p>
               <a
                 href="#contact"
-                className="inline-flex mt-8 bg-violet-600 text-white px-7 py-3.5 rounded-full font-semibold hover:bg-violet-500 transition-colors shadow-lg"
+                className="inline-flex mt-8 bg-white text-brand-dark px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-light transition-all duration-300 hover:scale-105 shadow-lg focus:ring-4 focus:ring-brand focus:outline-none"
               >
                 Learn More
               </a>
@@ -598,11 +598,11 @@ function Technology() {
             {techFeatures.map((f, i) => (
               <FadeIn key={i} delay={i * 100}>
                 <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                  <div className="w-10 h-10 bg-violet-500/20 rounded-lg flex items-center justify-center text-violet-400 mb-4">
+                  <div className="w-10 h-10 bg-brand/20 rounded-lg flex items-center justify-center text-brand mb-4">
                     <IconSmartphone />
                   </div>
                   <h3 className="font-semibold text-white mb-2">{f.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{f.desc}</p>
+                  <p className="text-brand-light/60 text-sm leading-relaxed">{f.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -624,31 +624,31 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-violet-50 via-white to-indigo-50">
+    <section id="contact" className="py-24 bg-gradient-to-br from-brand-light via-white to-neutral-bg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <FadeIn>
             <div>
-              <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Get Started</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+              <p className="text-brand-dark font-semibold text-sm uppercase tracking-wider mb-3">Get Started</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-dark leading-tight">
                 Book Your Free Consultation Today
               </h2>
-              <p className="mt-4 text-slate-600 leading-relaxed">
+              <p className="mt-4 text-neutral-muted leading-relaxed">
                 Start your bespoke treatment plan — no waiting lists, no obligations. Fill in the form and
                 a member of our team will be in touch within 24 hours.
               </p>
 
-              <div className="mt-8 space-y-4 text-slate-600">
+              <div className="mt-8 space-y-4 text-neutral-muted">
                 <div className="flex items-center gap-3">
-                  <span className="text-violet-600"><IconPhone /></span>
+                  <span className="text-brand-dark"><IconPhone /></span>
                   <span>020 7123 4567</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-violet-600"><IconMail /></span>
+                  <span className="text-brand-dark"><IconMail /></span>
                   <span>hello@jxborthodontics.co.uk</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-violet-600"><IconPin /></span>
+                  <span className="text-brand-dark"><IconPin /></span>
                   <span>42 Harley Street, London, W1G 9PR</span>
                 </div>
               </div>
@@ -657,18 +657,18 @@ function Contact() {
 
           <FadeIn delay={150}>
             {submitted ? (
-              <div className="bg-white rounded-3xl shadow-xl border border-slate-100 p-10 text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600 text-3xl">
+              <div className="bg-white rounded-3xl shadow-xl border border-brand/20 p-10 text-center">
+                <div className="w-16 h-16 bg-accent-mint rounded-full flex items-center justify-center mx-auto mb-4 text-brand-dark text-3xl">
                   ✓
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Thank You!</h3>
-                <p className="text-slate-600">We&apos;ve received your details. A member of our team will be in touch within 24 hours.</p>
+                <h3 className="text-xl font-bold text-brand-dark mb-2">Thank You!</h3>
+                <p className="text-neutral-muted">We&apos;ve received your details. A member of our team will be in touch within 24 hours.</p>
               </div>
             ) : (
-              <div className="bg-white rounded-3xl shadow-xl border border-slate-100 p-8 sm:p-10">
+              <div className="bg-white rounded-3xl shadow-xl border border-brand/20 p-8 sm:p-10">
                 <div className="space-y-5">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1.5">
+                    <label htmlFor="name" className="block text-sm font-medium text-neutral-text mb-1.5">
                       Full Name
                     </label>
                     <input
@@ -676,12 +676,12 @@ function Contact() {
                       type="text"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-slate-900"
+                      className="w-full px-4 py-3 rounded-xl border border-brand/30 focus:outline-none focus:ring-4 focus:ring-brand focus:border-brand-dark transition-all text-neutral-text"
                       placeholder="e.g. Sarah Thompson"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1.5">
+                    <label htmlFor="email" className="block text-sm font-medium text-neutral-text mb-1.5">
                       Email Address
                     </label>
                     <input
@@ -689,12 +689,12 @@ function Contact() {
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-slate-900"
+                      className="w-full px-4 py-3 rounded-xl border border-brand/30 focus:outline-none focus:ring-4 focus:ring-brand focus:border-brand-dark transition-all text-neutral-text"
                       placeholder="sarah@example.co.uk"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1.5">
+                    <label htmlFor="phone" className="block text-sm font-medium text-neutral-text mb-1.5">
                       Phone Number
                     </label>
                     <input
@@ -702,30 +702,30 @@ function Contact() {
                       type="tel"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all text-slate-900"
+                      className="w-full px-4 py-3 rounded-xl border border-brand/30 focus:outline-none focus:ring-4 focus:ring-brand focus:border-brand-dark transition-all text-neutral-text"
                       placeholder="07700 900 123"
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1.5">
-                      Message <span className="text-slate-400">(optional)</span>
+                    <label htmlFor="message" className="block text-sm font-medium text-neutral-text mb-1.5">
+                      Message <span className="text-neutral-muted">(optional)</span>
                     </label>
                     <textarea
                       id="message"
                       rows={3}
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all resize-none text-slate-900"
+                      className="w-full px-4 py-3 rounded-xl border border-brand/30 focus:outline-none focus:ring-4 focus:ring-brand focus:border-brand-dark transition-all resize-none text-neutral-text"
                       placeholder="Tell us about what you're looking for..."
                     />
                   </div>
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-violet-600 text-white py-4 rounded-xl font-semibold text-lg hover:bg-violet-700 transition-all shadow-lg shadow-violet-200 hover:shadow-violet-300"
+                    className="w-full bg-brand-dark text-white py-4 rounded-xl font-semibold text-lg hover:bg-[#164568] transition-all duration-300 shadow-lg hover:scale-105 focus:ring-4 focus:ring-brand focus:outline-none"
                   >
                     Request My Free Consultation
                   </button>
-                  <p className="text-xs text-slate-400 text-center">
+                  <p className="text-xs text-neutral-muted text-center">
                     By submitting, you agree to our privacy policy. We&apos;ll never share your data.
                   </p>
                 </div>
@@ -742,17 +742,17 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-400 py-16">
+    <footer className="bg-brand-dark text-brand-light/60 py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xs">J</span>
               </div>
               <span className="text-lg font-bold text-white">
-                JXB Orthodontics<span className="text-violet-400">.</span>
+                JXB Orthodontics<span className="text-brand">.</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed">
@@ -764,11 +764,11 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#treatments" className="hover:text-violet-400 transition-colors">Treatments</a></li>
-              <li><a href="#why-us" className="hover:text-violet-400 transition-colors">Why Choose Us</a></li>
-              <li><a href="#reviews" className="hover:text-violet-400 transition-colors">Patient Reviews</a></li>
-              <li><a href="#technology" className="hover:text-violet-400 transition-colors">Technology</a></li>
-              <li><a href="#contact" className="hover:text-violet-400 transition-colors">Contact</a></li>
+              <li><a href="#treatments" className="hover:text-brand transition-colors">Treatments</a></li>
+              <li><a href="#why-us" className="hover:text-brand transition-colors">Why Choose Us</a></li>
+              <li><a href="#reviews" className="hover:text-brand transition-colors">Patient Reviews</a></li>
+              <li><a href="#technology" className="hover:text-brand transition-colors">Technology</a></li>
+              <li><a href="#contact" className="hover:text-brand transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -796,7 +796,7 @@ function Footer() {
                   key={s}
                   href="#"
                   aria-label={s}
-                  className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-xs font-bold text-white hover:bg-violet-600 transition-colors"
+                  className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-xs font-bold text-white hover:bg-brand transition-colors"
                 >
                   {s[0]}
                 </a>
@@ -808,9 +808,9 @@ function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
           <p>© {new Date().getFullYear()} JXB Orthodontics. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-violet-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-violet-400 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-violet-400 transition-colors">Cookie Policy</a>
+            <a href="#" className="hover:text-brand transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-brand transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-brand transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
@@ -867,7 +867,7 @@ export default function Home() {
     <>
       <SchemaMarkup />
       <Navbar />
-      <main className="scroll-smooth">
+      <main className="scroll-smooth bg-neutral-bg">
         <Hero />
         <WhyUs />
         <Treatments />
