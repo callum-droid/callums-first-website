@@ -162,10 +162,10 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <div className="w-9 h-9 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-xl flex items-center justify-center">
-            <span className="text-white font-bold text-sm">C</span>
+            <span className="text-white font-bold text-sm">J</span>
           </div>
           <span className="text-xl font-bold text-slate-900 tracking-tight">
-            Callum's Ortho<span className="text-violet-600">.</span>
+            JXB Orthodontics<span className="text-violet-600">.</span>
           </span>
         </a>
 
@@ -353,7 +353,7 @@ function WhyUs() {
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Why Choose Callum's Ortho</p>
+            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Why Choose JXB Orthodontics</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
               Orthodontic Care Built Around You
             </h2>
@@ -469,7 +469,7 @@ const testimonials = [
   {
     name: "Sophie",
     age: 28,
-    quote: "I was so nervous about getting braces as an adult, but the team at Align made me feel completely at ease. My Invisalign journey was seamless and the results are incredible!",
+    quote: "I was so nervous about getting braces as an adult, but the team at JXB made me feel completely at ease. My Invisalign journey was seamless and the results are incredible!",
     rating: 5,
     initials: "S",
     colour: "bg-pink-100 text-pink-600",
@@ -485,7 +485,7 @@ const testimonials = [
   {
     name: "Priya",
     age: 34,
-    quote: "Dental Monitoring meant I only needed to visit every 10–12 weeks. Perfect for my busy schedule. The finance plan made it affordable too. Couldn't recommend Align more highly.",
+    quote: "Dental Monitoring meant I only needed to visit every 10–12 weeks. Perfect for my busy schedule. The finance plan made it affordable too. Couldn't recommend JXB more highly.",
     rating: 5,
     initials: "P",
     colour: "bg-amber-100 text-amber-600",
@@ -645,7 +645,7 @@ function Contact() {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-violet-600"><IconMail /></span>
-                  <span>hello@alignortho.co.uk</span>
+                  <span>hello@jxborthodontics.co.uk</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-violet-600"><IconPin /></span>
@@ -749,10 +749,10 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">C</span>
+                <span className="text-white font-bold text-xs">J</span>
               </div>
               <span className="text-lg font-bold text-white">
-                Callum's Ortho<span className="text-violet-400">.</span>
+                JXB Orthodontics<span className="text-violet-400">.</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed">
@@ -778,7 +778,7 @@ function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2"><IconPin /> 42 Harley Street, London, W1G 9PR</li>
               <li className="flex items-center gap-2"><IconPhone /> 020 7123 4567</li>
-              <li className="flex items-center gap-2"><IconMail /> hello@alignortho.co.uk</li>
+              <li className="flex items-center gap-2"><IconMail /> hello@jxborthodontics.co.uk</li>
             </ul>
           </div>
 
@@ -806,7 +806,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-          <p>© {new Date().getFullYear()} Callum's Ortho. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} JXB Orthodontics. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-violet-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-violet-400 transition-colors">Terms of Service</a>
@@ -826,11 +826,11 @@ function SchemaMarkup() {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        name: "Callum's Ortho",
+        name: "JXB Orthodontics",
         description: "Specialist orthodontic practice offering Invisalign, fixed braces, and ceramic braces in London.",
-        url: "https://www.alignortho.co.uk",
+        url: "https://www.jxborthodontics.co.uk",
         telephone: "+442071234567",
-        email: "hello@alignortho.co.uk",
+        email: "hello@jxborthodontics.co.uk",
         address: {
           "@type": "PostalAddress",
           streetAddress: "42 Harley Street",
@@ -846,7 +846,7 @@ function SchemaMarkup() {
       },
       {
         "@type": "MedicalOrganization",
-        name: "Callum's Ortho",
+        name: "JXB Orthodontics",
         medicalSpecialty: "Orthodontics",
       },
     ],
