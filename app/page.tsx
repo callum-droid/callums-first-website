@@ -162,10 +162,10 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <div className="w-9 h-9 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-xl flex items-center justify-center">
-            <span className="text-white font-bold text-sm">A</span>
+            <span className="text-white font-bold text-sm">C</span>
           </div>
           <span className="text-xl font-bold text-slate-900 tracking-tight">
-            Align<span className="text-violet-600">.</span>
+            Callum's Ortho<span className="text-violet-600">.</span>
           </span>
         </a>
 
@@ -353,7 +353,7 @@ function WhyUs() {
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Why Choose Align</p>
+            <p className="text-violet-600 font-semibold text-sm uppercase tracking-wider mb-3">Why Choose Callum's Ortho</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
               Orthodontic Care Built Around You
             </h2>
@@ -749,10 +749,10 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">A</span>
+                <span className="text-white font-bold text-xs">C</span>
               </div>
               <span className="text-lg font-bold text-white">
-                Align<span className="text-violet-400">.</span>
+                Callum's Ortho<span className="text-violet-400">.</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed">
@@ -806,7 +806,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-          <p>© {new Date().getFullYear()} Align Orthodontics. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Callum's Ortho. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-violet-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-violet-400 transition-colors">Terms of Service</a>
@@ -826,7 +826,7 @@ function SchemaMarkup() {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        name: "Align Orthodontics",
+        name: "Callum's Ortho",
         description: "Specialist orthodontic practice offering Invisalign, fixed braces, and ceramic braces in London.",
         url: "https://www.alignortho.co.uk",
         telephone: "+442071234567",
@@ -846,7 +846,7 @@ function SchemaMarkup() {
       },
       {
         "@type": "MedicalOrganization",
-        name: "Align Orthodontics",
+        name: "Callum's Ortho",
         medicalSpecialty: "Orthodontics",
       },
     ],
